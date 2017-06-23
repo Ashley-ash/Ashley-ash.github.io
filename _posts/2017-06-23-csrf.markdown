@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "跨域问题/cookie/CSRF"
 date:   2017-06-23 16:01:27 +0800
-categories: jekyll update
+categories: 网站
 ---
-
-#跨域问题/cookie/CSRF
 
 整理：[@皮皮莎]()
 
