@@ -7,10 +7,10 @@ categories: 网站
 
 整理：[@皮皮莎]()
 
-###跨域
+### 跨域
 跨域是指从一个域名的网页去请求另一个域名的资源。比如从www.baidu.com 页面去请求 www.google.com 的资源。跨域的严格一点的定义是：只要 协议，域名，端口有任何一个的不同，就被当作是跨域
 
-###为什么浏览器限制跨域
+### 为什么浏览器限制跨域
 原因就是安全问题：如果一个网页可以随意地访问另外一个网站的资源，那么就有可能在客户完全不知情的情况下出现安全问题。比如下面的操作就有安全问题：
 
 1. 用户访问www.mybank.com ，登陆并进行网银操作，这时cookie啥的都生成并存放在浏览器
@@ -24,10 +24,10 @@ categories: 网站
 
 * 浏览器一般不对script，img等进行跨域限制。因此为跨域访问（合理）和CSRF攻击（安全问题）留出了空间
 
-###为什么要跨域
+### 为什么要跨域
 既然有安全问题，那为什么又要跨域呢？ 有时公司内部有多个不同的子域，比如一个是location.company.com ,而应用是放在app.company.com , 这时想从 app.company.com去访问 location.company.com 的资源就属于跨域。
 
-###怎么跨域
+### 怎么跨域
 1. 由于浏览器一般不对script，img等进行跨域限制，所以我们有机会通过script的方式来实现跨域访问。
 2. 如果限制了script，还可以用JSONP，只支持get，不支持post
 3. 代理：例如www.123.com/index.html需要调用www.456.com/server.php，可以写一个接口www.123.com/server.php，由这个接口在后端去调用www.456.com/server.php并拿到返回值，然后再返回给index.html，这就是一个代理的模式。相当于绕过了浏览器端，自然就不存在跨域问题。
@@ -42,7 +42,7 @@ web sockets原理：在JS创建了web socket之后，会有一个HTTP请求发�
 只有在支持web socket协议的服务器上才能正常工作。
 7. 还有几个前端策略，没看懂
 
-###CSRF（Cross-site request forgery）跨站请求伪造
+### CSRF（Cross-site request forgery）跨站请求伪造
 既然有多种多样的跨域方法，就有人利用这些方法来伪造请求，浏览器发送cookie，得到受信网站的信任。
 
 几种防止CSRF的方法：
