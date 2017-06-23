@@ -2,10 +2,10 @@
 layout: post
 title:  "跨域问题/cookie/CSRF"
 date:   2017-06-23 16:01:27 +0800
+author: 皮皮莎
 categories: 网站
+permalink: "csrf"
 ---
-
-整理：[@皮皮莎]()
 
 ###跨域
 跨域是指从一个域名的网页去请求另一个域名的资源。比如从www.baidu.com 页面去请求 www.google.com 的资源。跨域的严格一点的定义是：只要 协议，域名，端口有任何一个的不同，就被当作是跨域
